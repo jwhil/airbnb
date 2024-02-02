@@ -368,9 +368,12 @@ body {
 #icon {
 	border-radius: 8px;
 	border-image-slice: 100%;
+	border-image-repeat: stretch;
 	font-weight: 600;
 	margin-top: 12px;
+	grid-auto-flow: column;
 	text-align: center;
+	text-size-adjust: 100%;
 }
 
 input[type="radio"] {
@@ -386,6 +389,8 @@ input[type="radio"] {
 	padding-right: 24px;
 	margin-top: 24px;
 	margin-bottom: 32px;
+	content: contain;
+	isolation: isolate;
 }
 
 .hero-grid {
@@ -417,6 +422,24 @@ input[type="radio"] {
 	grid-template-columns: 327.2px;
 	grid-template-rows: 0px 310.837px 0px;
 
+	background-attachment: scroll;
+}
+
+#photoinfo {
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+}
+
+#picture {
+	box-sizing: border-box;
+	justify-self: auto;
+	border-radius: 12px;
+}
+
+img {
+	width: 327.2px;
+	height: 310.837px;
 }
 
 .search-bar {}
